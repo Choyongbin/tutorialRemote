@@ -1,0 +1,55 @@
+ *{
+    padding: 5px;
+    margin: 0;
+ }
+ body {
+    background-color: #D1AF94;
+ }
+ .ui.icon.input {
+    height: 50px;
+    width: 300px;
+    font-size: 15px;
+    float: left;
+ }
+ .ui.form{
+    float:left;
+    margin-top: 30px;
+}
+ #editor_wrapper {
+    max-height: 1000px;
+    width: 700px;
+}
+#title {
+    max-height: 45px;
+    min-height: 1px;
+    resize: none;
+ }
+.ui.primary.button{
+    width: 70px;
+    height: 45px;
+    font-size: 13px;
+ }
+ .button{
+    margin-left: 540px;
+ }
+ #noteTable{
+    margin-top: 21px;
+ }
+ .note {
+    float: left;
+    border: 1px round black;
+    width: 600px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 8px;
+ }
+ .note:hover {
+    background-color: #D2FBFF;
+ }
+.noteContent {
+    visibility: hidden;
+    display: none;
+ }
+

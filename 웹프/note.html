@@ -1,0 +1,52 @@
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Note</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="note.css">
+
+</head>
+
+
+<body>
+  <div class="ui category search">
+   <div class="ui icon input">
+    <input class="prompt" id="search" type="text" placeholder="Search Notes..." value="">
+    <i class="search icon" onclick="search();"></i>
+  </div>
+  <div class="results"></div>
+</div>
+
+<br><br>
+
+<div class="row">
+ <div class="col-md-6">
+  <div class="ui form" id="ckeditor">
+   <div class="field">
+    <textarea id="title" rows="2" placeholder="Title"></textarea>
+  </div>
+  <div id="editor_wrapper">
+    <textarea id="content" placeholder="Content"></textarea>
+  </div>
+  <div class="button">
+   <button class="ui primary button" onclick="saveNote();">Save</button>
+   <button class="ui primary button" onclick="clearNote();">Clear</button>
+ </div>
+</div>
+</div>
+<div class="col-md-6" id="noteTable">
+
+
+
+</div>
+
+<script src="ckeditor/ckeditor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="note.js"></script>
+</body>
+</html>
